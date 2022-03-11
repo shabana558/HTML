@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codepen-Demo Flexbox 3</title>
+<style>
+    body{padding: zero; }
+    .headerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: tomato;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .footerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background:lightgreen;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .mainContainer {
+        display: flex;
+        flex-flow:row wrap;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mainContentitem{
+        text-align: left;
+        background: deepskyblue;
+    }
+    article{
+        padding:10px;
+        margin: 10px;
+        background: aqua;
+    }
+    .sideBarLeftItem {background: gold;}
+    .sideBarRightItem {background: hotpink;}
+
+    .sideBarItem { flex: 1 0 0;border: 0px solid green;}
+    .mainContentitem { flex: 3 0px;}
+    .sideBarLeftItem { order: 1;}
+    .mainContentitem {order: 2;}
+    .sideBarRightItem {order: 3;}
+ </style>
+  </head>
+</body>
+<header class="headerContainer"><h1>HEADER-sample Flexbox Example</h1></header>
+<div class="mainContainer">
+    <section class="mainContentItem">
+        <article>
+            <h2>First article</h2>
+
+                <p>What is nature? There is a great deal of talk and endeavour to protect nature, the animals, the birds, the whales and dolphins, to clean the polluted rivers, lakes, fields and so on. Nature is not put together by thought, as religion and belief are. Nature is the tiger, that extraordinary animal with its energy, its great sense of power. Nature is the solitary tree in the field, the meadows and the grove; it is that squirrel shyly hiding behind a bough. Nature is the ant, the bee and all the living things of the earth. Nature is the river, not a particular river, whether the Ganga, the Thames or the Mississippi. Nature is those mountains, snow-clad, with dark blue valleys and range of hills meeting the sea.<p>
+        </article>
+    </article>
+    <h2>Second article</h2>
+
+       <p>Be in communion with nature, not verbally caught in the description of it, but be a part of it, be aware, feel that you belong to all that, be able to have love for all that, to admire a deer, the lizard on the wall, that broken branch lying on the ground. Look at the evening star or the new moon without the word, without merely saying how beautiful it is and turning your back on it, attracted by something else, but watch that single star and new delicate moon as though for the first time.<p>
+
+     </article>
+    </article>
+    <h2>Third article</h2>
+
+    <p>This is one of the responsibilities of the educator, not merely to teach mathematics or how to run a computer. Far more important is to have communion with other human beings who suffer, struggle, and have great pain and the sorrow of poverty, and with those people who go by in an expensive car.<p>
+
+     </article>
+
+    </section>
+    <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left side Bar</p></div></sideBar>
+    <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right side Bar</p></div></sideBar>
+</div>
+<footer class="footerContainer">Footer</footer>
+
+</body>
+</html>
