@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 inputForm</title>
+    <link href="../css/inputForm.css" rel="stylesheet">
+</head>
+<body>
+    <header class="Container headerContainer">Header-Sample Flexbox</header>
+    <div>
+        <label form="Name">text input box for Name:</label>
+        <input type="text" id="Name">
+    </div>
+    <div>
+        <label form="pwd">text input box for password:</label>
+        <input type="password" id="pwd">
+    </div>
+    <div>
+        <label form="email">text input box for email:</label>
+        <input type="email" id="email">
+    </div>
+    <div>
+        <label form="url">text input box for Url:</label>
+        <input type="url" id="url">
+    </div>
+    <div>
+        <label form="Number">text input box for Number:</label>
+        <input type="number" id="Number">
+    </div>
+    <div>
+        <label form="date">text input box for date:</label>
+        <input type="datetime-local" id="date">
+    </div>
+    <div>
+        <label form="salary">text input box for salary:</label>
+        <input type="range" min="30000" max="60000" step="100" id="salary" v.>
+        <salary-output class="salary-output">50000</salary-output>
+    </div>
+    <input type="submit">
+</form>
+<script>
+    var text=document.querySelector("#Name");
+    var errorInput=document.querySelector(".error");
+    text.addEventListener('input',function()
+    {
+        let nameRegex=RegExp('[A-Z]{1}[a-z]{2,}$');
+        if(nameRegex.text(text.value))
+        errorInput.textContent="";
+        else
+        errorInput.textContent="Name is InCorect";
+    });
+    const salary=document.querySelector('#salary');
+    const output=document.querySelector('.salary-output');
+    output.textContent=salary.value;
+    salary.addEventListener('input',function()
+    {
+        output.textContent=salary.value;
+    });
+    </script>
+</body>
+</html>
